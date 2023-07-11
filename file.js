@@ -1,8 +1,8 @@
-
+const fs  = require('fs');
 
 
 // creating file
-
+fs.readFile('')
 
 
 // writing files
