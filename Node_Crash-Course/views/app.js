@@ -4,6 +4,9 @@ const express  = require('express');
 
 const app = express();
 
+// register view engine
+app.set()
+
 // listen for requests
 app.listen(3000);
 
