@@ -1,7 +1,6 @@
 const express  = require('express');
 
 // express app
-
 const app = express();
 
 // register view engine
@@ -11,13 +10,16 @@ app.set('view engine', 'ejs');
 app.listen(3000);
 
 app.get('/', (req, res) => {
-    res.render('about');
+    res.render('index');
 });
 
 app.get('/about', (req, res) => {
     res.redirect('/about');
 });
 
+app.get('/blogs/create',(req, res)=>{
+    res.render();
+})
 
 
 // 404 page
