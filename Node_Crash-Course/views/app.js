@@ -10,7 +10,12 @@ app.set('view engine', 'ejs');
 app.listen(3000);
 
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Home'});
+    const blogs = [
+        {title: 'hello friend', snipeet: 'pta ni ji kons anasha karta hai'},
+        {title: 'great comics', snipeet: 'who the hell on pplnet earth read comic'},
+        {title: 'osho', snipeet: 'one of the best philosphe that india can have '},
+    ];
+    res.render('index', {title: 'Home', blogs});
 });
 
 app.get('/about', (req, res) => {
